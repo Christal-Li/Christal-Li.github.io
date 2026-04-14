@@ -15,10 +15,6 @@ body.pre-start-lock {
 	overflow: hidden;
 }
 
-body.instruction-lock {
-	overflow: hidden;
-}
-
 
 .screen {
 	min-height: 100vh;
@@ -79,25 +75,6 @@ body.instruction-lock {
 }
 
 .game-button:hover {
-	transform: translateY(-2px);
-}
-
-.back-home-button {
-	position: absolute;
-	left: clamp(16px, 3vw, 48px);
-	bottom: clamp(16px, 4vh, 56px);
-	display: inline-block;
-	line-height: 0;
-	transition: transform 0.2s ease;
-}
-
-.back-home-button img {
-	width: min(42vw, 340px);
-	height: auto;
-	display: block;
-}
-
-.back-home-button:hover {
 	transform: translateY(-2px);
 }
 
@@ -227,7 +204,7 @@ body.to-game .transition-panel {
 }
 
 .back-btn img {
-	width: min(22vw, 180px);
+	width: min(80vw, 300px);
 	height: auto;
 	display: block;
 }
