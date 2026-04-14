@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Background Demo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="screen first-screen" id="first-screen">
+		<main class="hero">
+			<a class="start-button" href="#second-screen" aria-label="start">
+				<img src="pic/button1.png" alt="startGame">
+			</a>
+		</main>
+	</section>
+
+	<section class="screen second-screen" id="second-screen">
+		<section class="instruction-copy" aria-label="instruction text">
+			<h2>Enter the forest...</h2>
+			<p>Help Little Red Riding Hood on her journey to her grandmother's house.</p>
+			<p>As you move through the story, you will make choices that guide her path.</p>
+			<p>Be careful - the forest is not only dangerous,<br>but also full of voices that may make you doubt yourself...</p>
+			<p>Will you trust yourself, or listen to the voices in the dark?</p>
+		</section>
+		<a class="back-home-button" href="#first-screen" aria-label="backToIndex">
+			<img src="pic/button5.png" alt="backToIndex">
+		</a>
+		<a class="game-button" href="game.html" aria-label="enterGame">
+			<img src="pic/button2.png" alt="enterGame">
+		</a>
+	</section>
+	<div class="transition-panel" aria-hidden="true"></div>
+	<script src="index.js"></script>
+</body>
+</html>
