@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ending - Little Red</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="ending-page second-screen">
+	<button id="collectionBtn" class="collection-btn" type="button" aria-haspopup="dialog" aria-controls="endingModal">
+		Ending Collection
+	</button>
+
+	<main class="ending-shell" aria-live="polite">
+		<div class="ending-image-card">
+			<img id="endingImage" src="" alt="Ending illustration">
+		</div>
+
+		<section class="ending-card" aria-labelledby="endingTitle">
+			<h2 id="endingTitle">Ending</h2>
+			<p id="endingText"></p>
+			<div class="ending-actions">
+				<button id="restartBtn" class="action-btn image-action-btn" type="button" aria-label="Start again">
+					<img src="pic/button4.png" alt="Start again">
+				</button>
+				<button id="homeBtn" class="action-btn image-action-btn" type="button" aria-label="Back to home">
+					<img src="pic/button5.png" alt="Back to home">
+				</button>
+			</div>
+		</section>
+	</main>
+
+	<div id="endingModal" class="ending-modal" role="dialog" aria-modal="true" aria-labelledby="endingModalTitle" hidden>
+		<div class="ending-modal-backdrop" data-close-modal="true"></div>
+		<section class="ending-modal-panel">
+			<div class="ending-modal-header">
+				<h2 id="endingModalTitle">Collected Endings</h2>
+				<button id="closeModalBtn" class="close-modal-btn" type="button" aria-label="Close ending modal">Close</button>
+			</div>
+			<p id="endingCollectionCount" class="ending-count">0 / 4 unlocked</p>
+			<ul id="endingCollectionList" class="ending-collection-list"></ul>
+		</section>
+	</div>
+
+	<script src="ending.js"></script>
+</body>
+</html>
