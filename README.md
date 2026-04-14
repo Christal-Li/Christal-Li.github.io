@@ -1,7 +1,6 @@
 # My Website + PS Illustrations – [Little Red Riding Hood]
 
 **Role:** Website + Photoshop illustrations  
-**Folder:** `/assignment`
 
 ## Project
 This website expands our team's transmedia storyworld.  
