@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Background Demo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="screen first-screen" id="first-screen">
+		<main class="hero">
+			<a class="start-button" href="#second-screen" aria-label="start">
+				<img src="pic/button1.png" alt="startGame">
+			</a>
+		</main>
+	</section>
+
+	<section class="screen second-screen" id="second-screen">
+		<section class="instruction-copy" aria-label="instruction text">
+			<h2>Enter the forest...</h2>
+			<p>Help Little Red Riding Hood on her journey to her grandmother's house.</p>
+			<p>As you move through the story, you will make choices that guide her path.</p>
+			<p>Be careful - the forest is not only dangerous,<br>but also full of voices that may make you doubt yourself...</p>
+			<p>Will you trust yourself, or listen to the voices in the dark?</p>
+		</section>
+		<a class="back-home-button" href="#first-screen" aria-label="backToIndex">
+			<img src="pic/button5.png" alt="backToIndex">
+		</a>
+		<a class="game-button" href="game.html" aria-label="enterGame">
+			<img src="pic/button2.png" alt="enterGame">
+		</a>
+	</section>
+	<button class="info-button" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="info-popup">
+		Information
+	</button>
+	<section class="info-popup" id="info-popup" role="dialog" aria-modal="true" aria-label="Information panel" hidden>
+		<div class="info-popup-backdrop" data-info-close></div>
+		<div class="info-popup-panel">
+			<button class="info-popup-close" type="button" aria-label="Close information" data-info-close>
+				<img src="pic/close.png" alt="">
+			</button>
+			<div class="info-popup-content">
+				<h2>Introduction:</h2>
+				<p>To be added...</p>
+				<h2>Reference:</h2>
+				<p>To be added...</p>
+			</div>
+		</div>
+	</section>
+	<div class="transition-panel" aria-hidden="true"></div>
+	<script src="index.js"></script>
+</body>
+</html>
