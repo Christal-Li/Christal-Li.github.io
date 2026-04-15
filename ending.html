@@ -12,23 +12,23 @@
 	</button>
 
 	<main class="ending-shell" aria-live="polite">
-		<div class="ending-image-card">
-			<img id="endingImage" src="" alt="Ending illustration">
-		</div>
-
-		<section class="ending-card" aria-labelledby="endingTitle">
-			<h2 id="endingTitle">Ending</h2>
-			<p id="endingText"></p>
-			<div class="ending-actions">
-				<button id="restartBtn" class="action-btn image-action-btn" type="button" aria-label="Start again">
-					<img src="pic/button4.png" alt="Start again">
-				</button>
-				<button id="homeBtn" class="action-btn image-action-btn" type="button" aria-label="Back to home">
-					<img src="pic/button5.png" alt="Back to home">
-				</button>
+		<section class="ending-focus" aria-labelledby="endingTitle">
+			<div class="ending-image-card">
+				<img id="endingImage" src="" alt="Ending illustration">
 			</div>
+			<section class="ending-copy-card" aria-label="Ending text panel">
+				<h2 id="endingTitle" class="ending-title-banner">Ending</h2>
+				<p id="endingText" class="ending-text-strip"></p>
+			</section>
 		</section>
 	</main>
+
+	<button id="homeBtn" class="ending-corner-action ending-left" type="button" aria-label="Back to home">
+		<img src="pic/button5.png" alt="Back to home">
+	</button>
+	<button id="restartBtn" class="ending-corner-action ending-right" type="button" aria-label="Start again">
+		<img src="pic/button4.png" alt="Start again">
+	</button>
 
 	<div id="endingModal" class="ending-modal" role="dialog" aria-modal="true" aria-labelledby="endingModalTitle" hidden>
 		<div class="ending-modal-backdrop" data-close-modal="true"></div>
