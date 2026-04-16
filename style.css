@@ -28,6 +28,7 @@ body.info-open {
 
 .first-screen {
 	background-image: url("pic/index.png");
+	position: relative;
 }
 
 .second-screen {
@@ -86,6 +87,58 @@ body.info-open {
 
 .instruction-copy p:last-child {
 	margin-bottom: 0;
+}
+
+
+.first-team-links {
+	position: absolute;
+	top: clamp(16px, 3.2vh, 36px);
+	left: clamp(16px, 2.8vw, 34px);
+	z-index: 6;
+	display: grid;
+	gap: 10px;
+}
+
+.first-team-heading {
+	margin: 0;
+	font-size: clamp(8px, 0.85vw, 11px);
+	line-height: 1.45;
+	color: #fff2d0;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.first-team-link {
+	display: grid;
+	gap: 5px;
+	width: clamp(148px, 15vw, 220px);
+	padding: 11px 12px;
+	text-decoration: none;
+	border: 2px solid rgba(255, 233, 188, 0.55);
+	border-radius: 9px;
+	background: rgba(255, 238, 205, 0.14);
+	color: #fff8e5;
+	backdrop-filter: blur(1.5px);
+	transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.first-team-link:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 16px rgba(0, 0, 0, 0.28);
+	border-color: rgba(255, 240, 210, 0.82);
+}
+
+.first-team-title {
+	font-size: clamp(9px, 0.98vw, 13px);
+	line-height: 1.35;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #fff0c9;
+}
+
+.first-team-subtitle {
+	font-size: clamp(8px, 0.78vw, 10px);
+	line-height: 1.4;
+	color: #f9dfb0;
 }
 
 .game-button {
@@ -363,6 +416,23 @@ body.to-game .transition-panel {
 	min-height: 100vh;
 	padding: clamp(84px, 10vh, 112px) clamp(14px, 2vw, 24px) clamp(120px, 17vh, 180px);
 	box-sizing: border-box;
+}
+
+.ending-team-links {
+	position: absolute;
+	top: clamp(16px, 3.2vh, 36px);
+	left: clamp(16px, 2.8vw, 34px);
+	z-index: 6;
+	display: grid;
+	gap: 10px;
+}
+
+.ending-team-heading {
+	margin: 0;
+	font-size: clamp(8px, 0.85vw, 11px);
+	line-height: 1.45;
+	color: #fff2d0;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
 }
 
 .ending-shell {
@@ -775,6 +845,17 @@ body.to-game .transition-panel {
 		align-items: flex-start;
 	}
 
+	.ending-team-links {
+		top: 10px;
+		left: 10px;
+		gap: 6px;
+	}
+
+	.ending-team-heading {
+		font-size: 7px;
+		max-width: min(46vw, 156px);
+	}
+
 	.ending-shell {
 		width: min(96vw, 620px);
 	}
@@ -876,6 +957,30 @@ body.to-game .transition-panel {
 	.info-button {
 		font-size: 9px;
 		padding: 11px 13px;
+	}
+
+	.first-team-links {
+		top: 10px;
+		left: 10px;
+		gap: 6px;
+	}
+
+	.first-team-heading {
+		font-size: 7px;
+		max-width: min(46vw, 156px);
+	}
+
+	.first-team-link {
+		width: min(46vw, 156px);
+		padding: 8px 9px;
+	}
+
+	.first-team-title {
+		font-size: 8px;
+	}
+
+	.first-team-subtitle {
+		font-size: 7px;
 	}
 
 	.info-popup {
