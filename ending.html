@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ending - Little Red</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="ending-page second-screen">
+	<button id="collectionBtn" class="collection-btn" type="button" aria-haspopup="dialog" aria-controls="endingModal">
+		Ending Collection
+	</button>
+
+	<nav class="ending-team-links" aria-label="more projects">
+		<p class="ending-team-heading">Want to explore more stories?</p>
+		<a class="first-team-link" href="https://example.com/poster" target="_blank" rel="noopener noreferrer" aria-label="Open poster project">
+			<span class="first-team-title">Poster</span>
+			<span class="first-team-subtitle">Visual board</span>
+		</a>
+		<a class="first-team-link" href="https://example.com/storybook" target="_blank" rel="noopener noreferrer" aria-label="Open storybook project">
+			<span class="first-team-title">Storybook</span>
+			<span class="first-team-subtitle">Narrative pages</span>
+		</a>
+		<a class="first-team-link" href="https://example.com/social-app" target="_blank" rel="noopener noreferrer" aria-label="Open social app project">
+			<span class="first-team-title">Social App</span>
+			<span class="first-team-subtitle">Concept demo</span>
+		</a>
+	</nav>
+
+	<main class="ending-shell" aria-live="polite">
+		<section class="ending-focus" aria-labelledby="endingTitle">
+			<div class="ending-image-card">
+				<img id="endingImage" src="" alt="Ending illustration">
+			</div>
+			<section class="ending-copy-card" aria-label="Ending text panel">
+				<h2 id="endingTitle" class="ending-title-banner">Ending</h2>
+				<p id="endingText" class="ending-text-strip"></p>
+			</section>
+			<div class="ending-action-row" aria-label="Ending actions">
+				<button id="homeBtn" class="ending-corner-action ending-left" type="button" aria-label="Back to home">
+					<img src="pic/button5.png" alt="Back to home">
+				</button>
+				<button id="restartBtn" class="ending-corner-action ending-right" type="button" aria-label="Start again">
+					<img src="pic/button4.png" alt="Start again">
+				</button>
+			</div>
+		</section>
+	</main>
+
+	<div id="endingModal" class="ending-modal" role="dialog" aria-modal="true" aria-labelledby="endingModalTitle" hidden>
+		<div class="ending-modal-backdrop" data-close-modal="true"></div>
+		<section class="ending-modal-panel">
+			<div class="ending-modal-header">
+				<h2 id="endingModalTitle">Collected Endings</h2>
+				<div class="ending-modal-actions">
+					<button id="resetCollectionBtn" class="reset-collection-btn" type="button" aria-label="Reset ending collection">Reset</button>
+					<button id="closeModalBtn" class="close-modal-btn" type="button" aria-label="Close ending modal">
+						<img src="pic/cancel.png" alt="">
+					</button>
+				</div>
+			</div>
+			<p id="endingCollectionCount" class="ending-count">0 / 4 unlocked</p>
+			<ul id="endingCollectionList" class="ending-collection-list"></ul>
+		</section>
+	</div>
+
+	<script src="ending.js"></script>
+</body>
+</html>
